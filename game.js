@@ -41,19 +41,19 @@ let gameEnded = false;
 let playedFinishhimSound = false;
 
 function preload() {
-    this.load.image('swamp', 'assets/image/болото.png');
+    this.load.image('swamp', 'image/болото.png');
     for (let i = 0; i < 6; i++) {
-        this.load.image(`frog${i}`, `assets/image/жаба${i}.png`);
+        this.load.image(`frog${i}`, `image/жаба${i}.png`);
     }
-    this.load.image('bubble', 'assets/image/пузырь.png');
-    this.load.image('fight', 'assets/image/fight.png');
-    this.load.audio('hitSound', 'assets/sound/ква.mp3');
-    this.load.audio('shootSound', 'assets/sound/пузырь.mp3');
-    this.load.audio('musicEndSound', 'assets/sound/kalambur.mp3');
-    this.load.audio('winSound', 'assets/sound/win.mp3');
-    this.load.audio('loseSound', 'assets/sound/смех.mp3');
-    this.load.audio('finishhimSound', 'assets/sound/finish him.mp3');
-    this.load.image('winImage', 'assets/image/win.png');
+    this.load.image('bubble', 'image/пузырь.png');
+    this.load.image('fight', 'image/fight.png');
+    this.load.audio('hitSound', 'sound/ква.mp3');
+    this.load.audio('shootSound', 'sound/пузырь.mp3');
+    this.load.audio('musicEndSound', 'sound/kalambur.mp3');
+    this.load.audio('winSound', 'sound/win.mp3');
+    this.load.audio('loseSound', 'sound/смех.mp3');
+    this.load.audio('finishhimSound', 'sound/finish him.mp3');
+    this.load.image('winImage', 'image/win.png');
 }
 
 function create() {
