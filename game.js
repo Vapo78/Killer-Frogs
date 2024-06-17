@@ -43,7 +43,7 @@ let playedFinishhimSound = false;
 function preload() {
     this.load.image('swamp', 'assets/image/болото.png');
     for (let i = 0; i < 6; i++) {
-        this.load.image(`frog${i}`, `assets/image/frog${i}.png`);
+        this.load.image(`frog${i}`, `assets/image/жаба${i}.png`);
     }
     this.load.image('bubble', 'assets/image/пузырь.png');
     this.load.image('fight', 'assets/image/fight.png');
@@ -59,12 +59,12 @@ function preload() {
 function create() {
     swampImage = this.add.image(0, 0, 'swamp').setOrigin(0);
     frogImages = [
-        this.add.image(0, 0, 'frog0'),
-        this.add.image(0, 0, 'frog1'),
-        this.add.image(0, 0, 'frog2'),
-        this.add.image(0, 0, 'frog3'),
-        this.add.image(0, 0, 'frog4'),
-        this.add.image(0, 0, 'frog5')
+        this.add.image(0, 0, 'жаба0'),
+        this.add.image(0, 0, 'жаба1'),
+        this.add.image(0, 0, 'жаба2'),
+        this.add.image(0, 0, 'жаба3'),
+        this.add.image(0, 0, 'жаба4'),
+        this.add.image(0, 0, 'жаба5')
     ];
     bubbleImage = this.add.image(0, 0, 'bubble');
     fightImage = this.add.image(0, 0, 'fight');
